@@ -1,0 +1,8 @@
+.Container {
+  display: flex;
+  height: 83px;
+  background-color: var(--branco);
+  align-items: center;
+  justify-content: center;
+  gap: 56px;
+}

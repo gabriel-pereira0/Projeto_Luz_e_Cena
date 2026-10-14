@@ -1,18 +1,28 @@
-import Styles from './Header.module.css';
+// import Styles from './Header.module.css';
 import Link from '../Links';
+import HeaderList from './components/HeaderList';
+import HeaderListItem from './components/HeaderListItem';
 
 const Header = () => {
   return (
-    <header className={Styles.Container}>
-      <Link href='/' target='_blank'>
-        Eventos
-      </Link>
-      <Link href='/' target='_blank'>
-        Club fidelidade
-      </Link>
-      <Link href='/' target='_blank'>
-        Sobre nós
-      </Link>
+    <header>
+      <HeaderList>
+        <HeaderListItem>
+          <Link href='/' target='_blank'>
+            Eventos
+          </Link>
+        </HeaderListItem>
+        <HeaderListItem>
+          <Link href='/' target='_blank'>
+            Club fidelidade
+          </Link>
+        </HeaderListItem>
+        <HeaderListItem>
+          <Link href='/' target='_blank'>
+            Sobre nós
+          </Link>
+        </HeaderListItem>
+      </HeaderList>
     </header>
   );
 };

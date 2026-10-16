@@ -6,7 +6,7 @@ type HeaderListItemProps = {
 } & React.LiHTMLAttributes<HTMLLIElement>;
 
 const HeaderListItem = ({ children }: HeaderListItemProps) => {
-  return <li className={styles.item}>{children}</li>;
+  return <li className={styles.menuitem}>{children}</li>;
 };
 
 export default HeaderListItem;

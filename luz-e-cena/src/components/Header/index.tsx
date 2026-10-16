@@ -1,26 +1,32 @@
 // import Styles from './Header.module.css';
-import Link from '../Links';
+import styles from './Header.module.css';
+import Logo from '../Logo';
+import HeaderActions from './components/HeaderActions';
+import HeaderFormFilters from './components/HeaderFormFilters';
+import HeaderLinks from './components/HeaderLinks';
 import HeaderList from './components/HeaderList';
 import HeaderListItem from './components/HeaderListItem';
 
 const Header = () => {
   return (
-    <header>
+    <header className={styles.cabecalho}>
       <HeaderList>
         <HeaderListItem>
-          <Link href='/' target='_blank'>
-            Eventos
-          </Link>
+          <Logo
+            src='/Logo_azul.png'
+            alt='Logo da empresa'
+            width={100}
+            height={50}
+          />
+        </HeaderListItem>
+        <HeaderListItem className={styles.menuitem}>
+          <HeaderLinks />
         </HeaderListItem>
         <HeaderListItem>
-          <Link href='/' target='_blank'>
-            Club fidelidade
-          </Link>
+          <HeaderFormFilters />
         </HeaderListItem>
-        <HeaderListItem>
-          <Link href='/' target='_blank'>
-            Sobre nós
-          </Link>
+        <HeaderListItem className={styles.icones}>
+          <HeaderActions />
         </HeaderListItem>
       </HeaderList>
     </header>

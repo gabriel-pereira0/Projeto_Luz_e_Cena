@@ -1,4 +1,4 @@
-import styles from './styles.module.css';
+import styles from './Button.module.css';
 import classNames from 'classnames';
 
 type ButtonProps = {

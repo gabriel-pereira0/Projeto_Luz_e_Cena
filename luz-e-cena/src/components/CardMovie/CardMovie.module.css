@@ -8,13 +8,14 @@
   box-shadow: var(--box-shadow-card);
   display: flex;
   flex-direction: column;
-
+  border-radius: var(--border-radius);
   cursor: pointer;
 }
 
 .card img {
   width: 100%;
   object-fit: cover;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
 
 .container {

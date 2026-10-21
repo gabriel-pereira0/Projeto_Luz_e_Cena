@@ -3,6 +3,7 @@ import FooterDesenvolvimento from './FooterDesenvolvimento';
 import FooterFuncionamento from './FooterFuncionamento';
 import FooterInstitucional from './FooterInstitucional';
 import FooterLogo from './FooterLogo';
+import FooterRedesSociais from './FooterRedesSociais';
 
 const Footer = () => {
   return (
@@ -12,6 +13,7 @@ const Footer = () => {
           <FooterLogo />
           <FooterFuncionamento />
           <FooterInstitucional />
+          <FooterRedesSociais />
         </div>
       </footer>
       <FooterDesenvolvimento />
